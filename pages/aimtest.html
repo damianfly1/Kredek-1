@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imported css -->
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Aim Test</title>
+</head>
+
+<body>
+    <!--Part of page containing the nav-bar-->
+    <!-- The nav-bar contains one header and a go back button -->
+    <nav class="nav-bar">
+        <h1>HUMAN BENCHMARK</h1>
+        <button type="button" class="button" id="back-button">
+            Go back</button>
+    </nav>
+    <!-- Part of page containing the main content -->
+    <main>
+        <!-- Every div with this class should only contain the most important info -->
+        <div class="instructions">
+            <h2>Press start and try to press as many red dots as you can!</h2>
+        </div>
+        <!--Div containing the game elements, in this case two images on top of one another and a start button -->
+        <div class="game-container">
+            <div id="img-parent">
+                <img src="../imgs/grid.png" draggable="false" id="grid" alt="game grid">
+                <img src="../imgs/remove.png" draggable="false" id="dot" hidden alt="red dot">
+            </div>
+            <button type="button" class="button" id="start-aim-test">
+                Start!</button>
+        </div>
+    </main>
+    <!-- Footer of the page containing credits for icon authors and info -->
+    <footer class="footer">
+        <p>Credit for icon authors:</p>
+        <a href="https://www.flaticon.com/free-icons/grid" title="grid icons">Grid icons created by Freepik -
+            Flaticon</a><br>
+        <a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect
+            - Flaticon</a>
+        <p>Created by Damian Mucha for Kredek 2022</p>
+    </footer>
+</body>
+<!-- Imported JS -->
+<script src="../Scripts/aimtestscript.js"></script>
+
+</html>

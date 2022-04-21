@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/style.css">
+    <title>Memory Test</title>
+</head>
+
+<body>
+    <!--Part of page containing the nav-bar-->
+    <!-- The nav-bar contains one header and a go back button -->
+    <nav class="nav-bar">
+        <h1>HUMAN BENCHMARK</h1>
+        <button type="button" class="button" id="back-button">
+            Go back</button>
+    </nav>
+    <!-- Part of page containing the main content -->
+    <main>
+        <!-- Every div with this class should only contain the most important info -->
+        <div class="instructions">
+            <h2>Press start and type as many numbers as you can remember!</h2>
+            <h3>You've got 3 seconds for each number</h3>
+        </div>
+        <!--Div containing the game elements, in this case input and a start/submit button -->
+        <div class="game-container">
+            <input type="number" id="input" disabled="true">
+            <button type="button" class="button" id="start-memory-test">
+                Start!</button>
+        </div>
+    </main>
+    <!-- Footer of the page containing info -->
+    <footer class="footer">
+        <p>Created by Damian Mucha for Kredek 2022</p>
+    </footer>
+</body>
+
+<script src="../Scripts/memorytestscript.js"></script>
+
+</html>

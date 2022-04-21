@@ -1,0 +1,167 @@
+/* Imported google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oswald&display=swap');
+
+/* Variables used in the stylesheet, allowing for easy color theme and font switching */
+:root {
+    --main-color: #379ece;
+    --secondary-color: white;
+    --special-color: #E0CA3C;
+    --header-font-family: 'Oswald', sans-serif;
+    --button-font-family: 'Abel', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    margin: -1% -1% 1% -1%;
+    position: sticky;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-icon img {
+    width: 5em;
+    height: 5em;
+    margin-top: 2em;
+}
+
+.game-icon p {
+    color: var(--secondary-color);
+    font-family: var(--header-font-family);
+    margin: 20px 30px;
+    font-size: 1em;
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-family: var(--header-font-family);
+    margin: 20px 30px;
+    font-size: 2em;
+}
+
+h2 {
+    color: var(--main-color);
+    font-family: var(--header-font-family);
+    margin: 10px 15px;
+    font-size: 1.75em;
+}
+
+h3 {
+    color: var(--main-color);
+    font-family: var(--header-font-family);
+    margin: 5px 10px;
+    font-size: 1.5em;
+}
+
+.button {
+    font-family: var(--button-font-family);
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    border-radius: 10%;
+    margin: 20px 20px;
+    border: 2px solid var(--secondary-color);
+    font-size: 1.25em;
+    transition: all 0.5s ease;
+}
+
+.game-icons-box {
+    display: flex;
+    justify-content: center;
+    border-color: var(--main-color);
+}
+
+.game-icon {
+    width: 10em;
+    height: 10em;
+    background-color: var(--main-color);
+    margin: 2em 2em;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.game-icon:hover {
+    border: 1px solid var(--special-color);
+}
+
+
+.button:hover {
+    border-color: var(--special-color);
+}
+
+.game-container {
+    margin-top: 1em;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* lines below prevent users from dragging the img as it would be quite annoying during play */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.game-container button {
+    border: 2px solid var(--main-color);
+}
+
+.game-container button:hover {
+    border: 2px solid var(--special-color);
+}
+
+.game-container input[type=number] {
+    padding: 10px 10px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* three next styles are reponsible for putting one image over another */
+
+#img-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#grid {
+    width: 18em;
+    height: auto;
+    padding-bottom: 0;
+}
+
+#dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-left: 2em;
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: left;
+    justify-content: space-around;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Human Benchmark</title>
+</head>
+
+<body>
+    <!--Part of page containing the nav-bar-->
+    <!-- The nav-bar contains one header and a toogle theme button -->
+    <nav class="nav-bar">
+        <h1>HUMAN BENCHMARK</h1>
+        <button type="button" class="button" id="theme-toogle-button">
+            Dark theme</button>
+    </nav>
+    <!-- Part of page containing the main content -->
+    <main>
+        <!-- Every div with this class should only contain the most important info -->
+        <div class="instructions">
+            <h2>Pick the game you want to play!</h2>
+            <h3>Have fun and compete with friends!</h3>
+        </div>
+        <!-- Div containing two children game icons, both with their own img and desc -->
+        <div class="game-icons-box">
+            <a href="./pages/aimtest.html" style="text-decoration: none;">
+                <div class="game-icon">
+                    <img src="./imgs/target.png" alt="aim icon">
+                    <p>AIM TEST</p>
+                </div>
+            </a>
+            <a href="./pages/memorytest.html" style="text-decoration: none;">
+                <div class="game-icon">
+                    <img src="./imgs/memory.png" alt="memory icon">
+                    <p>MEMORY TEST</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <!-- Footer of the page containing credits for icon authors and info -->
+    <footer class="footer">
+        <p>Credit for icon authors:</p>
+        <a href="https://www.flaticon.com/free-icons/target" title="target icons">Target icons created by Kiranshastry -
+            Flaticon</a><br>
+        <a href="https://www.flaticon.com/free-icons/memory" title="memory icons">Memory icons created by Freepik -
+            Flaticon</a>
+        <p>Created by Damian Mucha for Kredek 2022</p>
+    </footer>
+</body>
+
+<script src="./Scripts/indexscript.js"></script>
+
+</html>
